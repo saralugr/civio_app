@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Work+Sans:ital,wght@0,300;0,400;500;600;700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "tertiary-container": "#316bf3", "surface-container-lowest": "#ffffff", "surface-tint": "#006c4a", "outline": "#6d7a72", "inverse-primary": "#68dba9", "surface-container-highest": "#e3e2e0", "surface-container-low": "#f4f3f1", "primary": "#006948", "inverse-surface": "#2f3130", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#3f465c", "background": "#faf9f7", "on-tertiary-fixed-variant": "#003ea8", "on-primary-container": "#f5fff7", "tertiary-fixed-dim": "#b4c5ff", "surface-bright": "#faf9f7", "on-surface": "#1a1c1b", "on-tertiary-fixed": "#00174b", "primary-fixed": "#85f8c4", "on-primary-fixed": "#002114", "surface": "#faf9f7", "surface-variant": "#e3e2e0", "on-error": "#ffffff", "on-tertiary-container": "#fefcff", "surface-container-high": "#e9e8e6", "on-secondary-fixed": "#131b2e", "secondary": "#565e74", "outline-variant": "#bccac0", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#005137", "error": "#ba1a1a", "tertiary-fixed": "#dbe1ff", "secondary-fixed-dim": "#bec6e0", "primary-fixed-dim": "#68dba9", "surface-container": "#efeeec", "primary-container": "#00855d", "on-secondary-container": "#5c647a", "on-error-container": "#93000a", "secondary-fixed": "#dae2fd", "secondary-container": "#dae2fd", "on-surface-variant": "#3d4a42", "surface-dim": "#dadad8", "inverse-on-surface": "#f1f1ef", "on-tertiary": "#ffffff", "on-background": "#1a1c1b", "tertiary": "#0051d5" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "margin": "2rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": [ "Work Sans" ], "label-md": [ "Work Sans" ], "citation-apa": [ "Work Sans" ], "headline-md": [ "Space Grotesk" ], "display-lg": [ "Space Grotesk" ], "label-sm": [ "Work Sans" ], "headline-lg": [ "Space Grotesk" ], "body-sm": [ "Work Sans" ], "display-lg-mobile": [ "Space Grotesk" ], "body-md": [ "Work Sans" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "citation-apa": [ "13px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-lg-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 max-w-[1280px] mx-auto px-margin flex flex-col justify-between pt-3 pb-2"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><span class="font-headline-md text-headline-md tracking-tight text-primary font-bold">Cívico</span><span class="hidden lg:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant"></span><span class="hidden lg:inline-block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Infórmate. Opina. Sé parte.</span></div><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">account_balance</span><span>Periodo Constitucional 2022-2026 / Elecciones 2026</span></div></div><div class="flex items-center gap-space-md flex-1 max-w-md justify-end"><div class="relative w-full max-w-xs hidden md:block"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-8 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Buscar proyectos de ley, curul o diputado..." type="text"/></div><div class="flex items-center gap-2"><button aria-label="Accesibilidad y contraste" class="p-1.5 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" type="button"><span class="material-symbols-outlined text-[20px]">accessibility_new</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XBuHymtBEr4iSoiO7QUuJgAxYZGa9kOBCRXK6_WlPukroXL1AI8BcW6_8qVGU5pMoPr3cfwZtxjGqE3iCjYz1pO6O6fJyC9Ook9YTiOkCjrjydpFCziJFJ4jwi7at1Q_552y0EZysoF1T6tgD3_WhgMEz2QRlaFj2hqd7Alqv48JX0bD5LJRpmWIUA5KktibFV-TYK9Tg2TzGsiuAplYpz1WdrJz-DbHqH3TkkRYVq2sn8VrsD31A3ciMrgPoO8t1adS8e1BKtog"/></div></div></div><nav class="flex items-center gap-1 overflow-x-auto py-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="inicio" href="#">Inicio</a><a aria-current="page" class="px-3 py-1.5 rounded whitespace-nowrap transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="congreso" href="#">Congreso</a><a class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="sistema-de-salud" href="#">Sistema de Salud</a><a class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="economia-y-pensiones" href="#">Economía y Pensiones</a><a class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="ambiente-y-sostenibilidad" href="#">Ambiente y Sostenibilidad</a><a class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="elecciones-2026" href="#">Elecciones 2026</a></nav></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Constitutional Framing Banner -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-gutter">
+<div class="max-w-3xl space-y-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Veeduría Constitucional y Datos Parlamentarios Abiertos
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Conoce el Congreso de la República
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            El Congreso de la República de Colombia se encarga de legislar, reformar la Constitución y ejercer control político sobre el Gobierno Nacional a través del Senado y la Cámara de Representantes.
+          </p>
+</div>
+<!-- Legislative Cycle Control Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-3 min-w-[280px]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Periodo Constitucional</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary text-on-primary font-medium">Vigente</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2 px-3 rounded text-center font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" type="button">
+              2022 – 2026
+            </button>
+<button class="flex-1 py-2 px-3 rounded text-center font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" type="button">
+              2026 – 2030 (Proy.)
+            </button>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+            Corte oficial Secretaría General del Congreso: Octubre 2025
+          </p>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Senado de la República</span>
+<span class="material-symbols-outlined text-primary text-[20px]">assured_workload</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">108 <span class="font-body-sm text-body-sm text-outline font-normal">curules</span></p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Circunscripción Nacional e Indígena</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Cámara de Representantes</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">188 <span class="font-body-sm text-body-sm text-outline font-normal">curules</span></p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Departamental, CITREP, Afro e Indígena</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Comisiones Constitucionales</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">balance</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">7 <span class="font-body-sm text-body-sm text-outline font-normal">permanentes</span></p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Primera a Séptima en ambas cámaras</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Fuerza Mayoritaria</span>
+<span class="material-symbols-outlined text-primary text-[20px]">pie_chart</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">18.5% <span class="font-body-sm text-body-sm text-outline font-normal">máx. bancada</span></p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pluralismo parlamentario sin hegemonía</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Hemicycle Visualization -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Hemiciclo Plenario</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Mapa Interactivo de Curules</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Selecciona o posa el cursor sobre cada escaño para auditar la ficha individual y filiación partidista.</p>
+</div>
+<!-- Corporation Toggle Tab -->
+<div class="inline-flex bg-surface-container p-1 rounded-lg">
+<button class="px-4 py-2 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all" id="btn-senado" onclick="switchChamber('senado')">
+            Senado (108 Curules)
+          </button>
+<button class="px-4 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-camara" onclick="switchChamber('camara')">
+            Cámara (188 Curules)
+          </button>
+</div>
+</div>
+<!-- Main Visual Container -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden">
+<!-- Hemicycle Visualizer -->
+<div class="w-full flex flex-col items-center justify-center pt-4 pb-2">
+<div class="relative w-full max-w-4xl flex items-center justify-center">
+<svg class="w-full h-auto select-none overflow-visible" id="hemicycle-svg" viewbox="0 0 800 420">
+<!-- Radial guide lines -->
+<path d="M 120 400 A 280 280 0 0 1 680 400" fill="none" stroke="#E5E0D8" stroke-dasharray="3 3" stroke-width="1"></path>
+<path d="M 170 400 A 230 230 0 0 1 630 400" fill="none" stroke="#E5E0D8" stroke-dasharray="3 3" stroke-width="1"></path>
+<path d="M 220 400 A 180 180 0 0 1 580 400" fill="none" stroke="#E5E0D8" stroke-dasharray="3 3" stroke-width="1"></path>
+<path d="M 270 400 A 130 130 0 0 1 530 400" fill="none" stroke="#E5E0D8" stroke-dasharray="3 3" stroke-width="1"></path>
+<!-- Mesa Directiva / Podium -->
+<rect fill="#6d7a72" height="24" opacity="0.3" rx="4" width="80" x="360" y="380"></rect>
+<text fill="#3d4a42" font-family="Work Sans" font-size="10" font-weight="600" text-anchor="middle" x="400" y="396">MESA DIRECTIVA</text>
+<!-- Dynamic Interactive Seats Container -->
+<g class="cursor-pointer" id="seats-group"></g>
+</svg>
+<!-- Floating Quick Inspection Card (Desktop Tooltip / Inspection overlay) -->
+<div class="absolute hidden transition-all duration-150 z-20 pointer-events-none bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl shadow-xl w-72" id="seat-tooltip">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-3 h-3 rounded-full flex-shrink-0" id="tooltip-party-dot"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary-fixed uppercase tracking-wider truncate" id="tooltip-party"></span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface leading-snug" id="tooltip-name"></h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1" id="tooltip-seat"></p>
+<div class="mt-3 pt-2 bg-inverse-surface flex items-center justify-between text-[11px] text-surface-container-high">
+<span class="truncate max-w-[170px]" id="tooltip-comision">Comisión Primera</span>
+<span class="text-primary-fixed flex items-center gap-0.5">Click para ver <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+<!-- Color Key / Legend for Hemicycle -->
+<div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 mt-6 pt-4 w-full bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#ba1a1a]"></span>
+<span>Pacto Histórico (20)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#ba1a1a]/70"></span>
+<span>Partido Liberal (14)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#006948]"></span>
+<span>Partido Conservador (15)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#00855d]"></span>
+<span>Alianza Verde &amp; CE (14)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#0051d5]"></span>
+<span>Centro Democrático (13)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#316bf3]"></span>
+<span>Cambio Radical (11)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#d97706]"></span>
+<span>Partido de la U (10)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-[#565e74]"></span>
+<span>Comunes y Especiales (10)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Distribution by Political Party Section -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Distribución Proporcional</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Bancadas y Fuerzas Políticas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Composición de curules y peso porcentual del Senado de la República (108 escaños oficiales).</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>Umbral reglamentario ordinario: 55 curules para mayoría calificada</span>
+</div>
+</div>
+<!-- Parties Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-red-100 text-red-800 font-semibold uppercase">Pacto Histórico</span>
+<span class="font-label-sm text-label-sm text-outline">#01 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">20</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">18.5%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-[#ba1a1a] h-full rounded-full" style="width: 18.5%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Coalición de gobierno con presencia transversal en comisiones constitucionales.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Pacto Histórico')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-blue-100 text-blue-900 font-semibold uppercase">Partido Conservador</span>
+<span class="font-label-sm text-label-sm text-outline">#02 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">15</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">13.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-primary h-full rounded-full" style="width: 13.9%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bancada tradicional con alta influencia en comisiones económicas y presupuestales.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Partido Conservador')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-red-50 text-red-700 font-semibold uppercase">Partido Liberal</span>
+<span class="font-label-sm text-label-sm text-outline">#03 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">13.0%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-error h-full rounded-full opacity-80" style="width: 13.0%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fuerza legislativa determinante en debates plenarios sobre reformas sociales.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Partido Liberal')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-900 font-semibold uppercase">Alianza Verde &amp; CE</span>
+<span class="font-label-sm text-label-sm text-outline">#04 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">13.0%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-primary-container h-full rounded-full" style="width: 13.0%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enfoque centrado en sostenibilidad ambiental, agenda anticorrupción y educación pública.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Alianza Verde')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-blue-50 text-blue-800 font-semibold uppercase">Centro Democrático</span>
+<span class="font-label-sm text-label-sm text-outline">#05 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">13</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">12.0%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-tertiary h-full rounded-full" style="width: 12.0%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Oposición declarada con recurrencia activa en debates de control político ministerial.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Centro Democrático')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-sky-100 text-sky-800 font-semibold uppercase">Cambio Radical</span>
+<span class="font-label-sm text-label-sm text-outline">#06 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">11</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">10.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 10.2%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Participación estratégica en iniciativas de infraestructura y hacienda pública.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Cambio Radical')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-amber-100 text-amber-800 font-semibold uppercase">Partido de la U</span>
+<span class="font-label-sm text-label-sm text-outline">#07 Bancada</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">9.3%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-amber-600 h-full rounded-full" style="width: 9.3%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bancada independiente con representatividad regional diversa y enfoque territorial.</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Partido de la U')">
+<span>Ver sus senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-slate-200 text-slate-800 font-semibold uppercase">Comunes &amp; Especiales</span>
+<span class="font-label-sm text-label-sm text-outline">Curules de Paz</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">curules</span>
+<span class="ml-auto font-label-md text-label-md text-primary font-bold">9.1%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mb-3">
+<div class="bg-secondary h-full rounded-full" style="width: 9.1%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comunes (5) por Acuerdo de Paz; Comunidades Indígenas (2); y Curules Especiales (3).</p>
+</div>
+<button class="mt-4 pt-3 flex items-center justify-between text-primary font-label-md text-label-md font-semibold hover:underline" onclick="filterByParty('Comunes')">
+<span>Ver senadores</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Congress Directory Section with Search & Filtering -->
+<section class="w-full py-space-xl bg-surface" id="directorio-section">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Registro Analítico</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Directorio de Congresistas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Fichas biográficas, trayectoria pública y rendimiento de actividad legislativa oficial.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mostrando <strong class="text-on-surface" id="results-count">8</strong> representantes</span>
+</div>
+</div>
+<!-- Filters & Search Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col lg:flex-row items-center gap-4">
+<!-- Search Input -->
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-colors" id="search-input" oninput="applyFilters()" placeholder="Buscar congresista por nombre o apellido..." type="text"/>
+</div>
+<!-- Filter Chamber -->
+<div class="w-full sm:w-auto flex-1 flex flex-wrap items-center gap-3">
+<select class="px-3 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="filter-corporation" onchange="applyFilters()">
+<option value="todos">Corporación: Todas</option>
+<option value="Senado">Senado de la República</option>
+<option value="Cámara">Cámara de Representantes</option>
+</select>
+<!-- Filter Party -->
+<select class="px-3 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="filter-party" onchange="applyFilters()">
+<option value="todos">Partido: Todos</option>
+<option value="Pacto Histórico">Pacto Histórico</option>
+<option value="Partido Liberal">Partido Liberal</option>
+<option value="Partido Conservador">Partido Conservador</option>
+<option value="Alianza Verde">Alianza Verde</option>
+<option value="Centro Democrático">Centro Democrático</option>
+<option value="Cambio Radical">Cambio Radical</option>
+<option value="Partido de la U">Partido de la U</option>
+<option value="Comunes">Comunes</option>
+</select>
+<!-- Filter Commission -->
+<select class="px-3 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="filter-commission" onchange="applyFilters()">
+<option value="todos">Comisión: Todas</option>
+<option value="Primera">Comisión Primera (Constitucional)</option>
+<option value="Tercera">Comisión Tercera (Hacienda/Crédito)</option>
+<option value="Quinta">Comisión Quinta (Medio Ambiente)</option>
+<option value="Séptima">Comisión Séptima (Salud y Trabajo)</option>
+</select>
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors ml-auto" onclick="resetFilters()">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Limpiar filtros</span>
+</button>
+</div>
+</div>
+<!-- Directory Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter" id="congress-grid">
+<!-- Card 1 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Primera" data-curul="S-014" data-name="María José Pizarro Rodríguez" data-party="Pacto Histórico">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Official portrait photograph of Colombian Senator María José Pizarro in executive formal attire, neutral institutional studio lighting, warm beige background matching civic transparency directory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI2KYRR1cop3y44tOZhEDuASP7A7Tlx6sKFP3YggzUTzF_4VOvp0UcY7Fo511m-SpaB6f3XI4jbb2-lcZSOwY0FqMfJicfpozfC7ApP9OTf7Ybx3mMIsFjUg2BTGGt95R3CbIaBfW94HsxwqJi1dDbm1mmGHW-uEtOabbiz3zjqTvYt-NF4ZZr0j6PdbIsKOQcP_PaevUR4AFa9i6Gjaq7zQttk0CMaLv5QauTEf7KcLxz1xZIOx10"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-100 text-red-800 font-bold uppercase inline-block mb-1">Pacto Histórico</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">María José Pizarro</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senadora de la República</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Primera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('pizarro')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 2 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Primera" data-curul="S-042" data-name="David Luna Sánchez" data-party="Cambio Radical">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Official parliamentary portrait photograph of Senator David Luna in dark suit, professional institutional lighting, warm neutral studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBubShNiftTPKHkLmx2n0PSpZtBEMRjJkJgyxwmzz7qfDNxKcUivjQwwXAGJPiMEe-WU4jMiu7w211gGGwi0oOenlWirlITFiZM7RvxUGVQas6HGCVCdmZkkLCDPuDz32KVTVSzbZlTEd7CHGZu4CF3C3VOPfYRDFT_kwenm2GgSM8z2uisF8wR7LBLHn7kV0TnpvKxx9GO8vUIZUd4tPZU72LEjaa_VaZ6yWZAfUm5AJFVFsF_ma51"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-sky-100 text-sky-800 font-bold uppercase inline-block mb-1">Cambio Radical</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">David Luna Sánchez</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senador de la República</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Primera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('luna')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 3 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Primera" data-curul="S-058" data-name="Paloma Valencia Laserna" data-party="Centro Democrático">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Studio portrait of Senator Paloma Valencia in business formal attire, professional high-key lighting with slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeRnCRMjr6s4Ma7WlKM4trnjwgCnE9Pod_6BJJj4unqzM4DNB8-7xWwqhakHC7NbI9E9z61YYO7LrV3cIbUnyEGKff1l4TEQ_u2SW2kjWwG0tpVRCHHQo9DE_bq4OjBnoI556DL-p9ytcq_OXXOrnR-nDlB_qZg0Mlms8wQ3XVAhPISK8sDbiomm6yWr1nykiFndVVhiPtRDBRSvXMefjq81wCrN7eL91bq4mmnobaiCltzAaUyefN"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-blue-100 text-blue-900 font-bold uppercase inline-block mb-1">Centro Democrático</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Paloma Valencia</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senadora de la República</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Primera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('valencia')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 4 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Primera" data-curul="S-022" data-name="Angélica Lozano Correa" data-party="Alianza Verde">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Formal governmental headshot of Senator Angélica Lozano, contemporary editorial lighting, neutral backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZHEIgsWWkNFs90i3VtyV3hjR0f-h7A6kI1fq_Io-bYbsgiRpgTMHN1H7EWCvbIQ6KrTQSdyDbR56BavAWuFhjEZVSfR5x_w0jnvD06ifSWtilaq8bqanf8W15Q0RF9Efos5RjDf8r1FGLVmpyjE7Q4xAmARvRMkz5_GIvN3hBeftLAaYDa8xv-3bAqkcN7ITf5vwW_dzIjnsqVeid5DPQD-rVGr15emoBFkFc1eVaI9HhpU_VCmTi"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold uppercase inline-block mb-1">Alianza Verde</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Angélica Lozano</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senadora de la República</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Primera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('lozano')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 5 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Tercera" data-curul="S-001" data-name="Efraín Cepeda Sarabia" data-party="Partido Conservador">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Institutional executive portrait of Colombian Senator Efraín Cepeda, President of Congress, wearing dark suit with blue tie, formal legislative setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2SqgQf-y19J7EHL1w28n1sJ7KSKb1J9wlKtOtER5nyFXj41tAiqbjKHnwa1UWiGKoL2Je3boeua9ClvMGH0fqWVihnEcVX5HOI-2aF3VFw1sjmwok321Be_iWnoJxy55H6N1ESEGK80KbuLnul0YTdvd3OTg8ZXwGJ7iYg9RxGdNhzd0Vs1zK_sM8PYclTzlA0qcbO3rKqAhudleXYES3CJmdC4vfGheLkHCKXpFu4lGFf3cBoYd0"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-blue-100 text-blue-900 font-bold uppercase inline-block mb-1">Partido Conservador</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Efraín Cepeda</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Presidente del Senado</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Tercera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('cepeda')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 6 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Cámara" data-comision="Tercera" data-curul="C-031" data-name="Katherine Miranda Peña" data-party="Alianza Verde">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Official portrait of Representative Katherine Miranda in congress chambers, neat green jacket, editorial clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxMSWexDHNAoRMuBiUbQKhQFTpEbPHff9_2CUNxaliMf-8d8U-D4WKeLIm9tBXuEFAN6DUDmmq0jKjwdleR5aG92dzTNxCvsVwYEzx4ACZHmMyBo1mRFlqvP8vv35jFb1r3o4KAClIZxXsZxcqb0FwGOUSWRrN3FDPDzHHhoAttJgSiNzvdeeuHKLmNU8jSoZLY3KorKbySHxkdOglT2r-w2GIR6DuJFiScijaR0tbtWap_ewtdVGc"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold uppercase inline-block mb-1">Alianza Verde</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Katherine Miranda</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Representante a la Cámara</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Cámara</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Tercera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('miranda')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 7 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Tercera" data-curul="S-065" data-name="Miguel Uribe Turbay" data-party="Centro Democrático">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Official photo of Colombian Senator Miguel Uribe Turbay in business suit, crisp natural light portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoxT0dU6n_5OE3blSQK9G6nTQ76k-mdCYVP9MjIJCxcTFhzfs_kcbyfA18KunkGAFuOpXpJrYB32LY2kV5DIz6QMgIhmq2Jv_aUlEJKvZUxBnfGPM-sJt0LK4JhmfQMqTr83f0N7vhFT2xZei6AtG0TLUPhihZaTDGxN3EPqQZ9kL-FNSgugHmkSE0MY4DXUTyDCt7xmBCRL1NUm59MORR94wuG0o5lwD88iSDE8It3glXbjvhpqTy"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-blue-100 text-blue-900 font-bold uppercase inline-block mb-1">Centro Democrático</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Miguel Uribe Turbay</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senador de la República</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Tercera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('uribe')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+<!-- Card 8 -->
+<div class="congress-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-chamber="Senado" data-comision="Primera" data-curul="S-099" data-name="Julián Gallo Cubillos" data-party="Comunes">
+<div>
+<div class="flex items-start gap-3 mb-3">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0" data-alt="Official portrait photograph of Colombian Senator Julián Gallo Cubillos, institutional setting, soft balanced indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmTViXgsanMxjE28xBzjoNsXnlwCSiLKrOzcehUFMMup4llLh3yzsCn_7XNmd3gIS9m05gXyLzUXesFeDdmFfgfzAJ3G94vL-C7bwpPu_F12u0u22r8wxq5l5hL-FQ_NtOp7Vhrdb-Xzla0PXahXwwBLanYYOm6-RLwIXykS3wOllTVMYOefVCh7IPhwsM403LseQyIe9cKJCiglj9OoFXFvGGqhF9-GhNgW0zhmNPR-p8-yLm_JuQ"/>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-200 text-slate-800 font-bold uppercase inline-block mb-1">Comunes</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Julián Gallo</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Senador por Acuerdo de Paz</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Corporación:</span>
+<span class="text-on-surface font-medium">Senado</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Comisión:</span>
+<span class="text-on-surface font-medium">Comisión Primera</span>
+</div>
+<div class="flex justify-between text-body-sm">
+<span class="text-outline">Periodo:</span>
+<span class="text-on-surface font-medium">2022 – 2026</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded transition-all text-center" onclick="openModal('gallo')">
+            Ver Perfil y Trayectoria
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Detail Profile Modal / Drawer -->
+<div class="fixed inset-0 z-50 hidden overflow-y-auto bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="profile-modal">
+<div class="relative w-full max-w-3xl bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden my-8 transform transition-all">
+<!-- Modal Header -->
+<div class="bg-surface-container-low p-space-lg flex items-start justify-between">
+<div class="flex items-start gap-4">
+<img class="w-20 h-20 rounded-full object-cover shadow-sm border-2 border-white" data-alt="Official high-resolution institutional portrait photograph of congressional representative for profile modal view." id="m-photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2U8FPR_vh5hijWtA6Duy6l7Xnkv9hlhQByoUMzQweFC_U1XGD0egbQ6rc5u29BRqw-RsEOBMywg9NjCCFXvoZPkqaWV9Mz_3GjIg3eHqfeEqPlSXnAoiJn6rshla9gWm-TFb1UNysiFDKqpYU6KpcNEv00ajPtF2ePshPQ9R2CJE8zTadPzfK8GJCnunw2eWNiuufJwZeah0V48XLiW8RkvjxFY3w8FFcrwIXFWwHKq_g1bOTzy3P"/>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-primary text-on-primary font-bold uppercase" id="m-party-badge">Pacto Histórico</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium" id="m-chamber-badge">Senado de la República</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold" id="m-name">María José Pizarro Rodríguez</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="m-role">Senadora de la República | Curul S-014 | Periodo 2022–2026</p>
+</div>
+</div>
+<button aria-label="Cerrar modal" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Body Tab Navigation -->
+<div class="p-space-lg space-y-space-lg">
+<!-- Legislative Metrics Counter -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="m-projects-count">38</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-0.5">Proyectos Radicados</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="font-headline-md text-headline-md text-secondary font-bold" id="m-debates-count">19</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-0.5">Debates Control Político</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="font-headline-md text-headline-md text-tertiary font-bold" id="m-reports-count">42</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-0.5">Ponencias Rendidas</span>
+</div>
+</div>
+<!-- Section 1: Academic Path Timeline -->
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ruta Académica y Estudios</h4>
+</div>
+<div class="relative pl-6 space-y-4 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant" id="academic-timeline">
+<!-- Dynamic elements loaded via JS -->
+<div class="relative">
+<span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<p class="font-headline-sm text-[15px] font-bold text-on-surface">Especialización en Cooperación Internacional y Gestión de Proyectos</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Universidad de Barcelona, 2017</p>
+</div>
+<div class="relative">
+<span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<p class="font-headline-sm text-[15px] font-bold text-on-surface">Licenciatura en Artes Visuales y Museología</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Universidad Nacional, 2011</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Political & Public Trajectory Timeline -->
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Trayectoria Política y Cargos Públicos</h4>
+</div>
+<div class="relative pl-6 space-y-4 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant" id="trajectory-timeline">
+<!-- Dynamic elements loaded via JS -->
+<div class="relative">
+<span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-[15px] font-bold text-on-surface">Senadora de la República</p>
+<span class="font-label-sm text-label-sm text-primary font-semibold">2022 – Presente</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primera Vicepresidenta del Senado (2023-2024), Comisión Primera Constitucional.</p>
+</div>
+<div class="relative">
+<span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-[15px] font-bold text-on-surface">Representante a la Cámara por Bogotá</p>
+<span class="font-label-sm text-label-sm text-outline">2018 – 2022</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Segunda Vicepresidenta de la Cámara de Representantes.</p>
+</div>
+</div>
+</div>
+<!-- Section 3: Official Legislative Activity & Initiatives -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">article</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Actividad Legislativa Destacada</h4>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Gaceta del Congreso 2024-2025</span>
+</div>
+<div class="space-y-2.5" id="legislative-initiatives">
+<div class="p-3 bg-surface-container-low rounded-lg flex items-start justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">PL 114/2024S</span>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Garantía del derecho a la protesta social pacífica y reforma a protocolos de uso de la fuerza.</p>
+<span class="font-body-sm text-[12px] text-outline">Estado: En trámite de segundo debate Plenaria Senado</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap">Autora Principal</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-start justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">PL 089/2023S</span>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Reconocimiento institucional y dignificación salarial de mujeres cuidadoras comunitarias.</p>
+<span class="font-body-sm text-[12px] text-outline">Estado: Aprobado en Comisión Séptima</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap">Coautora</span>
+</div>
+</div>
+</div>
+<!-- APA Citation Container for Academic Integrity -->
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Cita Oficial APA (7ma Ed.)</span>
+<button class="text-primary hover:text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-semibold transition-colors" onclick="navigator.clipboard.writeText(document.getElementById('apa-congress-quote').innerText)" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copiar cita</span>
+</button>
+</div>
+<p class="font-citation-apa text-citation-apa text-on-surface-variant" id="apa-congress-quote">
+            Observatorio Cívico. (2025). <em>Ficha de control y desempeño congresal: María José Pizarro Rodríguez (Periodo 2022-2026)</em>. Sistema de Información Parlamentaria Abierta. https://civico.org.co/congresista/pizarro-maria-jose
+          </p>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low px-space-lg py-3 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+          Fuente cruzada con Gaceta del Congreso y Sistema Único SUIN
+        </span>
+<button class="px-4 py-1.5 bg-on-surface text-surface rounded font-label-md text-label-md hover:bg-inverse-surface transition-colors" onclick="closeModal()">
+          Cerrar Expediente
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simulated Parliamentary Data Base for Hemicycle & Directory
+  const senatorsData = [
+    { id: 'pizarro', name: 'María José Pizarro Rodríguez', party: 'Pacto Histórico', chamber: 'Senado', comision: 'Primera', curul: 'S-014', color: '#ba1a1a', projects: 38, debates: 19, ponencias: 42,
+      studies: [
+        { title: 'Especialización en Cooperación Internacional y Gestión de Proyectos', inst: 'Universidad de Barcelona, 2017' },
+        { title: 'Licenciatura en Artes Plásticas y Museología', inst: 'Universidad Nacional, 2011' }
+      ],
+      trajectory: [
+        { role: 'Senadora de la República', period: '2022 – Presente', desc: 'Primera Vicepresidenta del Senado (2023-2024).' },
+        { role: 'Representante a la Cámara por Bogotá', period: '2018 – 2022', desc: 'Segunda Vicepresidenta de la Cámara de Representantes.' }
+      ],
+      initiatives: [
+        { code: 'PL 114/2024S', title: 'Garantía del derecho a la protesta social pacífica y reforma de protocolos de fuerza.', status: 'En trámite de segundo debate Plenaria Senado', type: 'Autora Principal' },
+        { code: 'PL 089/2023S', title: 'Reconocimiento laboral de mujeres cuidadoras comunitarias.', status: 'Aprobado en Comisión Séptima', type: 'Coautora' }
+      ]
+    },
+    { id: 'cepeda', name: 'Efraín Cepeda Sarabia', party: 'Partido Conservador', chamber: 'Senado', comision: 'Tercera', curul: 'S-001', color: '#006948', projects: 45, debates: 12, ponencias: 58,
+      studies: [
+        { title: 'Especialización en Finanzas Corporativas', inst: 'Universidad de los Andes, 1982' },
+        { title: 'Economía y Administración de Empresas', inst: 'Universidad del Norte, 1978' }
+      ],
+      trajectory: [
+        { role: 'Presidente del Senado de la República', period: '2024 – 2025', desc: 'Liderazgo institucional del Congreso bicameral.' },
+        { role: 'Senador de la República', period: '1994 – Presente', desc: 'Múltiples periodos constitucionales en Comisión Tercera.' }
+      ],
+      initiatives: [
+        { code: 'PL 201/2024S', title: 'Alivios tributarios e incentivos de fomento para microempresas agroindustriales.', status: 'En trámite Comisión Tercera', type: 'Autor Principal' }
+      ]
+    },
+    { id: 'luna', name: 'David Luna Sánchez', party: 'Cambio Radical', chamber: 'Senado', comision: 'Primera', curul: 'S-042', color: '#316bf3', projects: 29, debates: 27, ponencias: 31,
+      studies: [
+        { title: 'Maestría en Gobierno y Políticas Públicas', inst: 'Universidad Externado de Colombia, 2004' },
+        { title: 'Abogado', inst: 'Universidad del Rosario, 1998' }
+      ],
+      trajectory: [
+        { role: 'Senador de la República', period: '2022 – Presente', desc: 'Vocería activa en debates de inteligencia artificial y telecomunicaciones.' },
+        { role: 'Ministro de Tecnologías de la Información y las Comunicaciones', period: '2015 – 2018', desc: 'Expansión de conectividad de banda ancha nacional.' }
+      ],
+      initiatives: [
+        { code: 'PL 145/2024S', title: 'Marco regulatorio ético para el desarrollo e implementación de Inteligencia Artificial en el Estado.', status: 'Aprobado en primer debate', type: 'Autor Principal' }
+      ]
+    },
+    { id: 'valencia', name: 'Paloma Valencia Laserna', party: 'Centro Democrático', chamber: 'Senado', comision: 'Primera', curul: 'S-058', color: '#0051d5', projects: 52, debates: 34, ponencias: 46,
+      studies: [
+        { title: 'Maestría en Escritura Creativa', inst: 'Universidad de Nueva York (NYU), 2007' },
+        { title: 'Filosofía y Derecho', inst: 'Universidad de los Andes, 2002' }
+      ],
+      trajectory: [
+        { role: 'Senadora de la República', period: '2014 – Presente', desc: 'Miembro activa en Comisión Primera Constitucional y bloque de oposición.' }
+      ],
+      initiatives: [
+        { code: 'PL 073/2024S', title: 'Cadena perpetua para abusadores y asesinos de menores de edad.', status: 'Archivado en segundo debate', type: 'Autora Principal' }
+      ]
+    },
+    { id: 'lozano', name: 'Angélica Lozano Correa', party: 'Alianza Verde', chamber: 'Senado', comision: 'Primera', curul: 'S-022', color: '#00855d', projects: 41, debates: 22, ponencias: 39,
+      studies: [
+        { title: 'Maestría en Gerencia y Políticas Públicas', inst: 'Universidad Adolfo Ibáñez, 2012' },
+        { title: 'Abogada', inst: 'Universidad de la Sabana, 2001' }
+      ],
+      trajectory: [
+        { role: 'Senadora de la República', period: '2018 – Presente', desc: 'Impulsora de la Consulta Popular Anticorrupción.' }
+      ],
+      initiatives: [
+        { code: 'PL 012/2024S', title: 'Reducción de salarios y privilegios tributarios de altos dignatarios del Estado.', status: 'En trámite de conciliación', type: 'Autora Principal' }
+      ]
+    },
+    { id: 'miranda', name: 'Katherine Miranda Peña', party: 'Alianza Verde', chamber: 'Cámara', comision: 'Tercera', curul: 'C-031', color: '#00855d', projects: 32, debates: 21, ponencias: 28,
+      studies: [
+        { title: 'Especialización en Gestión de Ciudades Sostenibles', inst: 'Universidad Externado de Colombia, 2016' },
+        { title: 'Politóloga', inst: 'Universidad del Rosario, 2011' }
+      ],
+      trajectory: [
+        { role: 'Representante a la Cámara por Bogotá', period: '2018 – Presente', desc: 'Presidenta de la Comisión Tercera de Hacienda y Crédito Público (2022-2023).' }
+      ],
+      initiatives: [
+        { code: 'PL 045/2024C', title: 'Transparencia fiscal en la asignación de cupos de contratación regional.', status: 'En trámite segundo debate', type: 'Autora Principal' }
+      ]
+    },
+    { id: 'uribe', name: 'Miguel Uribe Turbay', party: 'Centro Democrático', chamber: 'Senado', comision: 'Tercera', curul: 'S-065', color: '#0051d5', projects: 26, debates: 31, ponencias: 22,
+      studies: [
+        { title: 'Maestría en Políticas Públicas', inst: 'Harvard Kennedy School, 2021' },
+        { title: 'Abogado', inst: 'Universidad de los Andes, 2009' }
+      ],
+      trajectory: [
+        { role: 'Senador de la República', period: '2022 – Presente', desc: 'Cabeza de lista al Senado por Centro Democrático.' },
+        { role: 'Secretario de Gobierno de Bogotá', period: '2016 – 2018', desc: 'Gobernanza distrital y seguridad ciudadana.' }
+      ],
+      initiatives: [
+        { code: 'PL 088/2024S', title: 'Protección al ahorro pensional individual y límites a la deuda consolidada de la nación.', status: 'En trámite Comisión Tercera', type: 'Autor Principal' }
+      ]
+    },
+    { id: 'gallo', name: 'Julián Gallo Cubillos', party: 'Comunes', chamber: 'Senado', comision: 'Primera', curul: 'S-099', color: '#565e74', projects: 18, debates: 8, ponencias: 14,
+      studies: [
+        { title: 'Estudios de Paz y Resolución de Conflictos', inst: 'Información no disponible formalmente', pending: true }
+      ],
+      trajectory: [
+        { role: 'Senador de la República', period: '2018 – Presente', desc: 'Curul constitucional asignada en virtud del Acuerdo Final de Paz de 2016.' }
+      ],
+      initiatives: [
+        { code: 'PL 102/2024S', title: 'Creación del fondo especial de tierras para víctimas y comunidades desmovilizadas.', status: 'En trámite primer debate', type: 'Autor Principal' }
+      ]
+    }
+  ];
+
+  // Render Hemicycle SVG Seats
+  function generateHemicycle(totalCurules = 108) {
+    const seatsGroup = document.getElementById('seats-group');
+    if (!seatsGroup) return;
+    seatsGroup.innerHTML = '';
+
+    const rows = [
+      { r: 130, count: Math.round(totalCurules * 0.16) },
+      { r: 180, count: Math.round(totalCurules * 0.22) },
+      { r: 230, count: Math.round(totalCurules * 0.28) },
+      { r: 280, count: Math.round(totalCurules * 0.34) }
+    ];
+
+    const partyPalette = [
+      { name: 'Pacto Histórico', color: '#ba1a1a', ratio: 0.185 },
+      { name: 'Partido Liberal', color: '#d9383a', ratio: 0.130 },
+      { name: 'Alianza Verde & CE', color: '#00855d', ratio: 0.130 },
+      { name: 'Partido Conservador', color: '#006948', ratio: 0.139 },
+      { name: 'Centro Democrático', color: '#0051d5', ratio: 0.120 },
+      { name: 'Cambio Radical', color: '#316bf3', ratio: 0.102 },
+      { name: 'Partido de la U', color: '#d97706', ratio: 0.093 },
+      { name: 'Comunes / Indígenas', color: '#565e74', ratio: 0.101 }
+    ];
+
+    let currentPartyIdx = 0;
+    let seatsAllocated = 0;
+    const cx = 400;
+    const cy = 400;
+    let seatIndex = 1;
+
+    rows.forEach((row) => {
+      for (let i = 0; i < row.count; i++) {
+        // distribute angle from 195 deg to 345 deg (semicircular arch)
+        const angle = Math.PI * (1.08 + (0.84 * (i / (row.count - 1 || 1))));
+        const x = cx + row.r * Math.cos(angle);
+        const y = cy + row.r * Math.sin(angle);
+
+        // Determine political party color
+        const progress = seatIndex / totalCurules;
+        let cumulative = 0;
+        let chosenParty = partyPalette[partyPalette.length - 1];
+        for (let p of partyPalette) {
+          cumulative += p.ratio;
+          if (progress <= cumulative) {
+            chosenParty = p;
+            break;
+          }
+        }
+
+        // Create seat circle element
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('cx', x);
+        circle.setAttribute('cy', y);
+        circle.setAttribute('r', '7');
+        circle.setAttribute('fill', chosenParty.color);
+        circle.setAttribute('class', 'transition-all duration-150 hover:scale-150 origin-center');
+        circle.setAttribute('data-seat-id', `Curul #${seatIndex}`);
+        circle.setAttribute('data-party', chosenParty.name);
+        circle.setAttribute('data-color', chosenParty.color);
+
+        // Link with representative if match exists
+        const matchedRep = senatorsData[(seatIndex - 1) % senatorsData.length];
+        circle.setAttribute('data-rep-name', matchedRep.name);
+        circle.setAttribute('data-rep-id', matchedRep.id);
+        circle.setAttribute('data-rep-comision', matchedRep.comision);
+
+        // Event listeners for Tooltip
+        circle.addEventListener('mouseenter', (e) => showTooltip(e, circle));
+        circle.addEventListener('mousemove', (e) => positionTooltip(e));
+        circle.addEventListener('mouseleave', hideTooltip);
+        circle.addEventListener('click', () => openModal(matchedRep.id));
+
+        seatsGroup.appendChild(circle);
+        seatIndex++;
+      }
+    });
+  }
+
+  // Tooltip Controls
+  const tooltip = document.getElementById('seat-tooltip');
+  function showTooltip(e, elem) {
+    if (!tooltip) return;
+    const name = elem.getAttribute('data-rep-name');
+    const party = elem.getAttribute('data-party');
+    const seatId = elem.getAttribute('data-seat-id');
+    const color = elem.getAttribute('data-color');
+    const comision = elem.getAttribute('data-rep-comision');
+
+    document.getElementById('tooltip-name').innerText = name;
+    document.getElementById('tooltip-party').innerText = party;
+    document.getElementById('tooltip-seat').innerText = `${seatId} · Presencial`;
+    document.getElementById('tooltip-comision').innerText = `Comisión ${comision}`;
+    document.getElementById('tooltip-party-dot').style.backgroundColor = color;
+
+    tooltip.classList.remove('hidden');
+    positionTooltip(e);
+  }
+
+  function positionTooltip(e) {
+    if (!tooltip) return;
+    const container = tooltip.parentElement.getBoundingClientRect();
+    const x = e.clientX - container.left + 15;
+    const y = e.clientY - container.top - 70;
+    tooltip.style.left = `${Math.min(x, container.width - 290)}px`;
+    tooltip.style.top = `${Math.max(10, y)}px`;
+  }
+
+  function hideTooltip() {
+    if (tooltip) tooltip.classList.add('hidden');
+  }
+
+  // Chamber Toggle
+  function switchChamber(chamber) {
+    const btnSenado = document.getElementById('btn-senado');
+    const btnCamara = document.getElementById('btn-camara');
+
+    if (chamber === 'senado') {
+      btnSenado.className = 'px-4 py-2 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all';
+      btnCamara.className = 'px-4 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all';
+      generateHemicycle(108);
+    } else {
+      btnCamara.className = 'px-4 py-2 rounded-md font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all';
+      btnSenado.className = 'px-4 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all';
+      generateHemicycle(188);
+    }
+  }
+
+  // Modal Functionality
+  function openModal(personId) {
+    const person = senatorsData.find(s => s.id === personId) || senatorsData[0];
+    const modal = document.getElementById('profile-modal');
+    if (!modal) return;
+
+    document.getElementById('m-name').innerText = person.name;
+    document.getElementById('m-party-badge').innerText = person.party;
+    document.getElementById('m-chamber-badge').innerText = `${person.chamber} de la República`;
+    document.getElementById('m-role').innerText = `${person.chamber === 'Senado' ? 'Senador(a)' : 'Representante'} | Curul ${person.curul} | Periodo 2022–2026`;
+
+    document.getElementById('m-projects-count').innerText = person.projects;
+    document.getElementById('m-debates-count').innerText = person.debates;
+    document.getElementById('m-reports-count').innerText = person.ponencias;
+
+    // Academic Timeline Render
+    const academicEl = document.getElementById('academic-timeline');
+    academicEl.innerHTML = '';
+    person.studies.forEach(study => {
+      const item = document.createElement('div');
+      item.className = 'relative';
+      item.innerHTML = `
+        <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+        <p class="font-headline-sm text-[15px] font-bold text-on-surface">${study.title}</p>
+        <p class="font-body-sm text-body-sm ${study.pending ? 'text-error font-medium italic' : 'text-on-surface-variant'}">${study.inst}</p>
+      `;
+      academicEl.appendChild(item);
+    });
+
+    // Trajectory Timeline Render
+    const trajectoryEl = document.getElementById('trajectory-timeline');
+    trajectoryEl.innerHTML = '';
+    if (person.trajectory && person.trajectory.length > 0) {
+      person.trajectory.forEach(traj => {
+        const item = document.createElement('div');
+        item.className = 'relative';
+        item.innerHTML = `
+          <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+          <div class="flex items-center justify-between">
+            <p class="font-headline-sm text-[15px] font-bold text-on-surface">${traj.role}</p>
+            <span class="font-label-sm text-label-sm text-primary font-semibold">${traj.period}</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">${traj.desc}</p>
+        `;
+        trajectoryEl.appendChild(item);
+      });
+    } else {
+      trajectoryEl.innerHTML = '<p class="font-body-sm text-body-sm text-outline italic">Información no disponible en registros públicos verificados.</p>';
+    }
+
+    // Initiatives Render
+    const initiativesEl = document.getElementById('legislative-initiatives');
+    initiativesEl.innerHTML = '';
+    person.initiatives.forEach(init => {
+      const block = document.createElement('div');
+      block.className = 'p-3 bg-surface-container-low rounded-lg flex items-start justify-between gap-4';
+      block.innerHTML = `
+        <div>
+          <span class="font-label-sm text-label-sm text-primary uppercase font-bold">${init.code}</span>
+          <p class="font-body-sm text-body-sm font-semibold text-on-surface">${init.title}</p>
+          <span class="font-body-sm text-[12px] text-outline">Estado: ${init.status}</span>
+        </div>
+        <span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap">${init.type}</span>
+      `;
+      initiativesEl.appendChild(block);
+    });
+
+    // APA Citation String
+    document.getElementById('apa-congress-quote').innerText =
+      `Observatorio Cívico. (2025). Ficha de control y desempeño congresal: ${person.name} (Periodo 2022-2026). Sistema de Información Parlamentaria Abierta. https://civico.org.co/congresista/${person.id}`;
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('profile-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Filtering System for Directory
+  function applyFilters() {
+    const searchVal = document.getElementById('search-input').value.toLowerCase();
+    const corpVal = document.getElementById('filter-corporation').value;
+    const partyVal = document.getElementById('filter-party').value;
+    const comVal = document.getElementById('filter-commission').value;
+
+    const cards = document.querySelectorAll('.congress-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name').toLowerCase();
+      const chamber = card.getAttribute('data-chamber');
+      const party = card.getAttribute('data-party');
+      const comision = card.getAttribute('data-comision');
+
+      const matchesSearch = name.includes(searchVal);
+      const matchesCorp = corpVal === 'todos' || chamber === corpVal;
+      const matchesParty = partyVal === 'todos' || party === partyVal;
+      const matchesCom = comVal === 'todos' || comision.includes(comVal);
+
+      if (matchesSearch && matchesCorp && matchesParty && matchesCom) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const countElem = document.getElementById('results-count');
+    if (countElem) countElem.innerText = visibleCount;
+  }
+
+  function filterByParty(partyName) {
+    const partyFilter = document.getElementById('filter-party');
+    if (partyFilter) {
+      partyFilter.value = partyName;
+      applyFilters();
+      const target = document.getElementById('directorio-section');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
+  function resetFilters() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('filter-corporation').value = 'todos';
+    document.getElementById('filter-party').value = 'todos';
+    document.getElementById('filter-commission').value = 'todos';
+    applyFilters();
+  }
+
+  // Initialize hemicycle on DOM readiness
+  window.addEventListener('DOMContentLoaded', () => {
+    generateHemicycle(108);
+  });
+  // Fallback direct execution
+  generateHemicycle(108);
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-xl"><div class="max-w-[1280px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-bold">Cívico</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Plataforma institucional de veeduría y datos parlamentarios abiertos para la deliberación democrática fundamentada y accesible.</p><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span>Portal Ciudadano No Partidario</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Fuentes Oficiales</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Cámara de Representantes <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Senado de la República <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Gaceta del Congreso <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Ministerio de Hacienda y Crédito Público <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Registraduría Nacional del Estado Civil <span class="material-symbols-outlined text-[14px]">north_east</span></a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Transparencia y Ética</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Metodología de Curaduría</a></li><li><a class="hover:text-primary transition-colors" href="#">Descarga de Microdatos Abiertos</a></li><li><a class="hover:text-primary transition-colors" href="#">Declaración de Neutralidad</a></li><li><a class="hover:text-primary transition-colors" href="#">Pauta de Accesibilidad Web (WCAG 2.1 AA)</a></li><li><a class="hover:text-primary transition-colors" href="#">Buzón Ciudadano de Correcciones</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cita Académica Estandarizada</h4><div class="bg-surface p-space-md rounded-lg space-y-2"><p class="font-citation-apa text-citation-apa text-on-surface-variant">Observatorio Cívico. (2025). <em>Registro analítico de iniciativas legislativas y votaciones nominales</em> [Conjunto de datos abiertos]. Repositorio Institucional Cívico. https://doi.org/10.5281/civico.2025.01</p><div class="flex items-center justify-between pt-1"><span class="font-label-sm text-label-sm text-outline uppercase">Norma APA 7ma Ed.</span><button class="text-primary hover:text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-semibold transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">content_copy</span><span>Copiar cita</span></button></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 Cívico - Plataforma Cívico-Legislativa Abierta. Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0).</p><div class="flex items-center gap-gutter"><a class="hover:text-primary transition-colors" href="#">Privacidad de Datos</a><a class="hover:text-primary transition-colors" href="#">Términos de Uso</a><a class="hover:text-primary transition-colors" href="#">API Parlamentaria</a></div></div></div></footer></body></html>
