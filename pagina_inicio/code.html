@@ -40,7 +40,7 @@
         </div>
 <h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-none">
           Infórmate. Opina. <br/>
-<span class="text-primary underline decoration-primary-fixed decoration-wavy decoration-2">Sé parte activa</span> del debate.
+<span class="text-primary">Sé parte activa</span> del debate.
         </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
           Plataforma rigurosa de pedagogía legislativa. Traducimos proyectos de ley complejos, trámites presupuestales y debates de control político en análisis ciudadanos transparentes con estricta trazabilidad documental y citación académica.
@@ -110,52 +110,11 @@
 </div>
 </div>
 </section>
-<!-- Thematic Quick Access Filter Pills (Horizontal Navigation) -->
-<section class="w-full bg-surface-container-lowest py-space-md px-margin sticky top-28 z-40 shadow-[0_4px_12px_rgba(0,0,0,0.03)]">
-<div class="max-w-[1280px] mx-auto flex items-center justify-between gap-gutter overflow-x-auto py-1">
-<div class="flex items-center gap-2">
-<span class="font-label-sm text-label-sm uppercase text-outline mr-2 hidden sm:inline">Temáticas:</span>
-<button class="filter-pill active px-3.5 py-1.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span>Todos</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">342</span>
-</button>
-<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span class="w-2 h-2 rounded-full bg-[#0891b2]"></span>
-<span>Sistema de Salud</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">48</span>
-</button>
-<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span class="w-2 h-2 rounded-full bg-[#d97706]"></span>
-<span>Economía y Pensiones</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">86</span>
-</button>
-<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span>Ambiente y Sostenibilidad</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">54</span>
-</button>
-<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span class="w-2 h-2 rounded-full bg-[#4338ca]"></span>
-<span>Congreso y Curules</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">112</span>
-</button>
-<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
-<span class="w-2 h-2 rounded-full bg-[#7c3aed]"></span>
-<span>Elecciones 2026</span>
-<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold">42</span>
-</button>
-</div>
-<div class="hidden lg:flex items-center gap-2 shrink-0 text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[16px]">tune</span>
-<span>Mostrando 4 destacados clave</span>
-</div>
-</div>
-</section>
 <!-- Central Analysis Grid (Three-pane responsive structure) -->
 <section class="w-full max-w-[1280px] mx-auto px-margin py-space-xl" id="proyectos-destacados">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
 <!-- LEFT SIDEBAR: Filters, Regulatory Stage & Tooling (3 Cols) -->
-<aside class="lg:col-span-3 space-y-space-md">
+<aside class="lg:col-span-3 space-y-space-md hidden" aria-hidden="true">
 <!-- Legislative Stage Quick Filter -->
 <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-md">
 <div class="flex items-center justify-between pb-1 border-b border-surface-container">
@@ -239,7 +198,7 @@
 </div>
 </div>
 <!-- Pulse Ciudadano Widget -->
-<div class="bg-surface-container p-space-md rounded-xl space-y-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-sm hidden">
 <div class="flex items-center gap-2 text-primary font-headline-sm text-label-md uppercase font-bold">
 <span class="material-symbols-outlined text-[18px]">how_to_vote</span>
 <span>Tu opinión cuenta</span>
@@ -265,7 +224,7 @@
 </div>
 </aside>
 <!-- CENTER / MAIN CONTENT: High-Fidelity Cards (6 Cols on desktop) -->
-<main class="lg:col-span-6 space-y-space-lg">
+<main class="lg:col-span-9 space-y-space-lg">
 <!-- HEADER SECTION TITLE -->
 <div class="flex items-baseline justify-between border-b border-surface-container-high pb-space-sm">
 <div>
@@ -365,10 +324,10 @@
 <!-- Action and Interaction Footer -->
 <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
 <div class="flex items-center gap-2">
-<button class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" type="button">
+<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="../sistema_salud/code.html">
 <span class="material-symbols-outlined text-[16px]">visibility</span>
 <span>Leer Análisis Completo</span>
-</button>
+</a>
 <button class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" type="button">
 <span class="material-symbols-outlined text-[16px]">forum</span>
 <span>142 opiniones</span>
@@ -485,11 +444,11 @@
 <!-- Action Footer -->
 <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
 <div class="flex items-center gap-2">
-<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="#">
+<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="../economia_pensiones/code.html">
 <span class="material-symbols-outlined text-[16px]">receipt_long</span>
 <span>Desglose por Ministerios</span>
 </a>
-<a class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" href="#">
+<a class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" href="../economia_pensiones/code.html">
 <span class="material-symbols-outlined text-[16px]">history_edu</span>
 <span>Cronograma de Debates</span>
 </a>
@@ -598,11 +557,11 @@
 <!-- Action Footer -->
 <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
 <div class="flex items-center gap-2">
-<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="#">
+<a class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="../paginas/ambiente_y_sostenibilidad.html">
 <span class="material-symbols-outlined text-[16px]">article</span>
 <span>Descargar Texto del Proyecto</span>
 </a>
-<a class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" href="#">
+<a class="px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" href="../paginas/ambiente_y_sostenibilidad.html">
 <span class="material-symbols-outlined text-[16px]">poll</span>
 <span>Sondear Bancadas</span>
 </a>
@@ -669,7 +628,7 @@
                 Consulta el voto nominal de cada congresista, bancadas mayoritarias, inasistencias y declaraciones de conflicto de interés.
               </p>
 </div>
-<a class="px-4 py-2.5 rounded bg-on-surface text-surface font-headline-sm text-label-md font-semibold hover:bg-primary transition-colors shrink-0 flex items-center gap-2" href="#">
+<a class="px-4 py-2.5 rounded bg-on-surface text-surface font-headline-sm text-label-md font-semibold hover:bg-primary transition-colors shrink-0 flex items-center gap-2" href="../congreso/code.html">
 <span class="material-symbols-outlined text-[18px]">account_balance</span>
 <span>Explorar Congreso y Curules</span>
 </a>
@@ -760,7 +719,7 @@
 </span>
 </div>
 <div class="pt-2">
-<a class="w-full py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block font-semibold transition-colors" href="#">
+<a class="w-full py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block font-semibold transition-colors" href="../congreso/code.html">
               Inspeccionar Voto Nominal
             </a>
 </div>
@@ -845,16 +804,5 @@
       container.innerHTML = '<div class="p-3 bg-surface-container-lowest rounded text-center space-y-1"><span class="material-symbols-outlined text-primary text-[24px]">task_alt</span><p class="font-label-md text-label-md font-bold text-on-surface">¡Gracias por participar!</p><p class="font-body-sm text-body-sm text-on-surface-variant">Tu voto anónimo ha sido indexado en el registro ciudadano.</p></div>';
     }
 
-    // Filter pill active switch demonstration
-    document.querySelectorAll('.filter-pill').forEach(pill => {
-      pill.addEventListener('click', function() {
-        document.querySelectorAll('.filter-pill').forEach(p => {
-          p.classList.remove('bg-inverse-surface', 'text-inverse-on-surface');
-          p.classList.add('bg-surface-container', 'text-on-surface');
-        });
-        this.classList.remove('bg-surface-container', 'text-on-surface');
-        this.classList.add('bg-inverse-surface', 'text-inverse-on-surface');
-      });
-    });
   </script>
 </div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-xl"><div class="max-w-[1280px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-bold">Cívico</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Plataforma institucional de veeduría y datos parlamentarios abiertos para la deliberación democrática fundamentada y accesible.</p><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span>Portal Ciudadano No Partidario</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Fuentes Oficiales</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Cámara de Representantes <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Senado de la República <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Gaceta del Congreso <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Ministerio de Hacienda y Crédito Público <span class="material-symbols-outlined text-[14px]">north_east</span></a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#">Registraduría Nacional del Estado Civil <span class="material-symbols-outlined text-[14px]">north_east</span></a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Transparencia y Ética</h4><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Metodología de Curaduría</a></li><li><a class="hover:text-primary transition-colors" href="#">Descarga de Microdatos Abiertos</a></li><li><a class="hover:text-primary transition-colors" href="#">Declaración de Neutralidad</a></li><li><a class="hover:text-primary transition-colors" href="#">Pauta de Accesibilidad Web (WCAG 2.1 AA)</a></li><li><a class="hover:text-primary transition-colors" href="#">Buzón Ciudadano de Correcciones</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cita Académica Estandarizada</h4><div class="bg-surface p-space-md rounded-lg space-y-2"><p class="font-citation-apa text-citation-apa text-on-surface-variant">Observatorio Cívico. (2025). <em>Registro analítico de iniciativas legislativas y votaciones nominales</em> [Conjunto de datos abiertos]. Repositorio Institucional Cívico. https://doi.org/10.5281/civico.2025.01</p><div class="flex items-center justify-between pt-1"><span class="font-label-sm text-label-sm text-outline uppercase">Norma APA 7ma Ed.</span><button class="text-primary hover:text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-semibold transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">content_copy</span><span>Copiar cita</span></button></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 Cívico - Plataforma Cívico-Legislativa Abierta. Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0).</p><div class="flex items-center gap-gutter"><a class="hover:text-primary transition-colors" href="#">Privacidad de Datos</a><a class="hover:text-primary transition-colors" href="#">Términos de Uso</a><a class="hover:text-primary transition-colors" href="#">API Parlamentaria</a></div></div></div></footer></body></html>
