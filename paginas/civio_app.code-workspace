@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../ambiente"
+		},
+		{
+			"path": "../elecciones"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "civio_app"
+	}
+}
