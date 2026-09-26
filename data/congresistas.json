@@ -1,0 +1,120 @@
+[
+  {
+    "id": "pizarro",
+    "name": "María José Pizarro Rodríguez",
+    "displayName": "María José Pizarro",
+    "party": "Pacto Histórico",
+    "chamber": "Senado",
+    "role": "Senadora de la República",
+    "commission": "Primera",
+    "seat": "S-014",
+    "period": "2022-2026",
+    "education": [
+      { "degree": "Especialización en Cooperación Internacional y Gestión de Proyectos", "institution": "Universidad de Barcelona", "year": "2017" },
+      { "degree": "Licenciatura en Artes Plásticas y Museología", "institution": "Universidad Nacional de Colombia", "year": "2011" }
+    ],
+    "professionalTrajectory": [
+      { "position": "Senadora de la República", "institution": "Senado de la República", "period": "2023-presente", "details": "Primera Vicepresidenta del Senado (2023-2024)." },
+      { "position": "Representante a la Cámara por Bogotá", "institution": "Cámara de Representantes", "period": "2018-2022", "details": "Segunda Vicepresidenta de la Cámara de Representantes." }
+    ],
+    "legislativeStats": { "filedProjects": 38, "oversightDebates": 19, "reportsSubmitted": 42 },
+    "featuredBills": [
+      { "number": "PL 114/2025", "title": "Garantía del derecho a la protesta social pacífica y reforma de protocolos de fuerza", "status": "En trámite de segundo debate en Plenaria del Senado", "role": "Autora principal" },
+      { "number": "PL 089/2023", "title": "Reconocimiento laboral de mujeres cuidadoras comunitarias", "status": "Aprobado en Comisión Séptima", "role": "Coautora" }
+    ],
+    "citation": "Observatorio Cívico. (2025). Ficha de control y desempeño congresal: María José Pizarro Rodríguez (Periodo 2022-2026). Sistema de Información Parlamentaria Abierta.",
+    "citationUrl": "https://civico.org.co/congresista/pizarro-maria-jose",
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDI2KYRR1cop3y44tOZhEDuASP7A7Tlx6sKFP3YggzUTzF_4VOvp0UcY7Fo511m-SpaB6f3XI4jbb2-lcZSOwY0FqMfJicfpozfC7ApP9OTf7Ybx3mMIsFjUg2BTGGt95R3CbIaBfW94HsxwqJi1dDbm1mmGHW-uEtOabbiz3zjqTvYt-NF4ZZr0j6PdbIsKOQcP_PaevUR4AFa9i6Gjaq7zQttk0CMaLv5QauTEf7KcLxz1xZIOx10"
+  },
+  {
+    "id": "luna",
+    "name": "David Luna Sánchez",
+    "displayName": "David Luna Sánchez",
+    "party": "Cambio Radical",
+    "chamber": "Senado",
+    "role": "Senador de la República",
+    "commission": "Primera",
+    "seat": "S-042",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Senador de la República", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBubShNiftTPKHkLmx2n0PSpZtBEMRjJkJgyxwmzz7qfDNxKcUivjQwwXAGJPiMEe-WU4jMiu7w211gGGwi0oOenlWirlITFiZM7RvxUGVQas6HGCVCdmZkkLCDPuDz32KVTVSzbZlTEd7CHGZu4CF3C3VOPfYRDFT_kwenm2GgSM8z2uisF8wR7LBLHn7kV0TnpvKxx9GO8vUIZUd4tPZU72LEjaa_VaZ6yWZAfUm5AJFVFsF_ma51"
+  },
+  {
+    "id": "valencia",
+    "name": "Paloma Valencia Laserna",
+    "displayName": "Paloma Valencia",
+    "party": "Centro Democrático",
+    "chamber": "Senado",
+    "role": "Senadora de la República",
+    "commission": "Primera",
+    "seat": "S-058",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Senadora de la República", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeRnCRMjr6s4Ma7WlKM4trnjwgCnE9Pod_6BJJj4unqzM4DNB8-7xWwqhakHC7NbI9E9z61YYO7LrV3cIbUnyEGKff1l4TEQ_u2SW2kjWwG0tpVRCHHQo9DE_bq4OjBnoI556DL-p9ytcq_OXXOrnR-nDlB_qZg0Mlms8wQ3XVAhPISK8sDbiomm6yWr1nykiFndVVhiPtRDBRSvXMefjq81wCrN7eL91bq4mmnobaiCltzAaUyefN"
+  },
+  {
+    "id": "lozano",
+    "name": "Angélica Lozano Correa",
+    "displayName": "Angélica Lozano",
+    "party": "Alianza Verde",
+    "chamber": "Senado",
+    "role": "Senadora de la República",
+    "commission": "Primera",
+    "seat": "S-022",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Senadora de la República", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZHEIgsWWkNFs90i3VtyV3hjR0f-h7A6kI1fq_Io-bYbsgiRpgTMHN1H7EWCvbIQ6KrTQSdyDbR56BavAWuFhjEZVSfR5x_w0jnvD06ifSWtilaq8bqanf8W15Q0RF9Efos5RjDf8r1FGLVmpyjE7Q4xAmARvRMkz5_GIvN3hBeftLAaYDa8xv-3bAqkcN7ITf5vwW_dzIjnsqVeid5DPQD-rVGr15emoBFkFc1eVaI9HhpU_VCmTi"
+  },
+  {
+    "id": "cepeda",
+    "name": "Efraín Cepeda Sarabia",
+    "displayName": "Efraín Cepeda",
+    "party": "Partido Conservador",
+    "chamber": "Senado",
+    "role": "Presidente del Senado",
+    "commission": "Tercera",
+    "seat": "S-001",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Presidente del Senado", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuD2SqgQf-y19J7EHL1w28n1sJ7KSKb1J9wlKtOtER5nyFXj41tAiqbjKHnwa1UWiGKoL2Je3boeua9ClvMGH0fqWVihnEcVX5HOI-2aF3VFw1sjmwok321Be_iWnoJxy55H6N1ESEGK80KbuLnul0YTdvd3OTg8ZXwGJ7iYg9RxGdNhzd0Vs1zK_sM8PYclTzlA0qcbO3rKqAhudleXYES3CJmdC4vfGheLkHCKXpFu4lGFf3cBoYd0"
+  },
+  {
+    "id": "miranda",
+    "name": "Katherine Miranda Peña",
+    "displayName": "Katherine Miranda",
+    "party": "Alianza Verde",
+    "chamber": "Cámara",
+    "role": "Representante a la Cámara",
+    "commission": "Tercera",
+    "seat": "C-031",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Representante a la Cámara", "institution": "Cámara de Representantes", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuCxMSWexDHNAoRMuBiUbQKhQFTpEbPHff9_2CUNxaliMf-8d8U-D4WKeLIm9tBXuEFAN6DUDmmq0jKjwdleR5aG92dzTNxCvsVwYEzx4ACZHmMyBo1mRFlqvP8vv35jFb1r3o4KAClIZxXsZxcqb0FwGOUSWRrN3FDPDzHHhoAttJgSiNzvdeeuHKLmNU8jSoZLY3KorKbySHxkdOglT2r-w2GIR6DuJFiScijaR0tbtWap_ewtdVGc"
+  },
+  {
+    "id": "uribe",
+    "name": "Miguel Uribe Turbay",
+    "displayName": "Miguel Uribe Turbay",
+    "party": "Centro Democrático",
+    "chamber": "Senado",
+    "role": "Senador de la República",
+    "commission": "Tercera",
+    "seat": "S-065",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Senador de la República", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuAoxT0dU6n_5OE3blSQK9G6nTQ76k-mdCYVP9MjIJCxcTFhzfs_kcbyfA18KunkGAFuOpXpJrYB32LY2kV5DIz6QMgIhmq2Jv_aUlEJKvZuxBnfGPM-sJt0LK4JhmfQMqTr83f0N7vhFT2xZei6AtG0TLUPhihZaTDGxN3EPqQZ9kL-FNSgugHmkSE0MY4DXUTyDCt7xmBCRL1NUm59MORR94wuG0o5lwD88iSDE8It3glXbjvhpqTy"
+  },
+  {
+    "id": "gallo",
+    "name": "Julián Gallo Cubillos",
+    "displayName": "Julián Gallo",
+    "party": "Comunes",
+    "chamber": "Senado",
+    "role": "Senador por Acuerdo de Paz",
+    "commission": "Primera",
+    "seat": "S-099",
+    "period": "2022-2026",
+    "professionalTrajectory": [{ "position": "Senador por Acuerdo de Paz", "institution": "Senado de la República", "period": "2022-2026" }],
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuCmTViXgsanMxjE28xBzjoNsXnlwCSiLKrOzcehUFMMup4llLh3yzsCn_7XNmd3gIS9m05gXyLzUXesFeDdmFfgfzAJ3G94vL-C7bwpPu_F12u0u22r8wxq5l5hL-FQ_NtOp7Vhrdb-Xzla0PXahXwwBLanYYOm6-RLwIXykS3wOllTVMYOefVCh7IPhwsM403LseQyIe9cKJCiglj9OoFXFvGGqhF9-GhNgW0zhmNPR-p8-yLm_JuQ"
+  }
+]
