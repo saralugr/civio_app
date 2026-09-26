@@ -1,0 +1,100 @@
+<section class="congress-intro">
+  <div class="congress-inner">
+    <p class="eyebrow">Veeduría constitucional · Ley 5 de 1992</p>
+    <h1>Congreso de la República</h1>
+    <p>Composición legislativa, representantes y actividad parlamentaria con referencias institucionales.</p>
+    <div class="seat-summary">
+      <div><strong>108</strong><span>curules del Senado</span></div>
+      <div><strong>188</strong><span>curules de Cámara</span></div>
+      <div><strong>8</strong><span>perfiles en este directorio</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="directory">
+  <div class="directory-heading">
+    <div><p class="eyebrow">Registro analítico</p><h2>Directorio de congresistas</h2></div>
+    <span>{{ filteredMembers().length }} de {{ members().length }} representantes</span>
+  </div>
+
+  <div class="filters" aria-label="Filtros del directorio">
+    <label class="search-field"><span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar por nombre, partido o curul" [value]="search()" (input)="setSearch($event)"></label>
+    <label><span class="sr-only">Corporación</span><select [value]="chamber()" (change)="setChamber($event)"><option>Todas</option><option>Senado</option><option>Cámara</option></select></label>
+    <label><span class="sr-only">Partido</span><select [value]="party()" (change)="setParty($event)"><option>Todos</option>@for (item of parties; track item) { <option [value]="item">{{ item }}</option> }</select></label>
+    <label><span class="sr-only">Comisión</span><select [value]="commission()" (change)="setCommission($event)"><option>Todas</option>@for (item of commissions; track item) { <option [value]="item">Comisión {{ item }}</option> }</select></label>
+    <button type="button" class="clear-button" (click)="clearFilters()">Limpiar filtros</button>
+  </div>
+
+  <section class="member-grid" aria-label="Perfiles parlamentarios">
+    @for (member of filteredMembers(); track member.id) {
+      <article class="member-card">
+        <div class="member-heading">
+          <div class="member-avatar" role="img" [attr.aria-label]="'Iniciales de ' + member.name">{{ initials(member) }}</div>
+          <div><span class="party-label">{{ member.party }}</span><h3>{{ member.displayName }}</h3><p>{{ member.role }}</p></div>
+        </div>
+        <dl>
+          <div><dt>Corporación</dt><dd>{{ member.chamber }}</dd></div>
+          <div><dt>Comisión</dt><dd>{{ member.commission }}</dd></div>
+          <div><dt>Curul · periodo</dt><dd>{{ member.seat }} · {{ member.period }}</dd></div>
+        </dl>
+        <button class="profile-button" type="button" (click)="selectedMember.set(member)">Ver perfil y trayectoria</button>
+      </article>
+    } @empty {
+      <p class="empty-state">No hay perfiles que coincidan con esos filtros.</p>
+    }
+  </section>
+
+  @if (legalBasis(); as law) {
+    <section class="legal-basis"><div><p class="eyebrow">Marco jurídico</p><h2>{{ law.number }} · {{ law.title }}</h2><p>{{ law.details }}</p></div><a [href]="law.source" target="_blank" rel="noopener noreferrer">Fuente institucional ↗</a></section>
+  }
+</main>
+
+@if (selectedMember(); as member) {
+  <div class="modal-backdrop" (click)="selectedMember.set(null)" (keydown.escape)="selectedMember.set(null)">
+    <section class="profile-modal" role="dialog" aria-modal="true" [attr.aria-label]="'Perfil de ' + member.name" (click)="$event.stopPropagation()">
+      <button class="modal-close" type="button" aria-label="Cerrar perfil" (click)="selectedMember.set(null)">×</button>
+      <div class="modal-heading"><div class="member-avatar large" role="img" [attr.aria-label]="'Iniciales de ' + member.name">{{ initials(member) }}</div><div><span class="party-label">{{ member.party }}</span><h2>{{ member.name }}</h2><p>{{ member.role }}</p></div></div>
+      <dl class="modal-details"><div><dt>Corporación</dt><dd>{{ member.chamber }}</dd></div><div><dt>Comisión constitucional</dt><dd>{{ member.commission }}</dd></div><div><dt>Curul</dt><dd>{{ member.seat }}</dd></div><div><dt>Periodo</dt><dd>{{ member.period }}</dd></div></dl>
+      @if (member.legislativeStats; as stats) {
+        <section class="profile-section">
+          <h3>Actividad legislativa</h3>
+          <div class="profile-stats">
+            <div><strong>{{ stats.filedProjects }}</strong><span>Proyectos radicados</span></div>
+            <div><strong>{{ stats.oversightDebates }}</strong><span>Debates de control político</span></div>
+            <div><strong>{{ stats.reportsSubmitted }}</strong><span>Ponencias rendidas</span></div>
+          </div>
+        </section>
+      }
+      @if (member.education?.length) {
+        <section class="profile-section">
+          <h3>Ruta académica y estudios</h3>
+          <ol class="trajectory-list">
+            @for (study of member.education; track study.degree) {
+              <li><strong>{{ study.degree }}</strong><span>{{ study.institution }}, {{ study.year }}</span></li>
+            }
+          </ol>
+        </section>
+      }
+      <section class="profile-section">
+        <h3>Trayectoria política y cargos públicos</h3>
+        <ol class="trajectory-list">
+          @for (position of member.professionalTrajectory; track position.position + position.period) {
+            <li><div class="trajectory-row"><strong>{{ position.position }}</strong><time>{{ position.period }}</time></div><span>{{ position.details || position.institution }}</span></li>
+          }
+        </ol>
+      </section>
+      @if (member.featuredBills?.length) {
+        <section class="profile-section">
+          <div class="profile-section-heading"><h3>Actividad legislativa destacada</h3><span>Gacetas 2023-2025</span></div>
+          <div class="bill-list">
+            @for (bill of member.featuredBills; track bill.number) {
+              <article class="bill-item"><div><strong>{{ bill.number }}</strong><span>{{ bill.title }}</span><small>Estado: {{ bill.status }}</small></div><span class="bill-role">{{ bill.role }}</span></article>
+            }
+          </div>
+        </section>
+      }
+      <a [href]="officialLink(member)" target="_blank" rel="noopener noreferrer">Consultar portal oficial de {{ member.chamber }} ↗</a>
+      @if (member.citation) { <p class="profile-citation">{{ member.citation }} @if (member.citationUrl) { <a [href]="member.citationUrl" target="_blank" rel="noopener noreferrer">Consultar ficha ↗</a> }</p> }
+    </section>
+  </div>
+}

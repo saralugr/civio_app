@@ -1,0 +1,67 @@
+<main class="form-page">
+  <a class="cancel-link" [routerLink]="cancelRoute()">← Cancelar</a>
+  <div class="form-heading">
+    <p class="eyebrow">Curaduría ciudadana · Registro legislativo</p>
+    <h1>Radicar una nueva iniciativa</h1>
+    <p>Completa los campos con información verificable. La tarjeta aparecerá en el módulo temático seleccionado.</p>
+  </div>
+
+  <form #lawForm="ngForm" (ngSubmit)="submit(lawForm)" novalidate>
+    <section class="form-section" aria-labelledby="classification-heading">
+      <div class="section-title"><span>01</span><h2 id="classification-heading">Clasificación y expediente</h2></div>
+      <div class="form-grid">
+        <label>Módulo temático <span class="required">*</span>
+          <select name="section" [(ngModel)]="draft.section" required>
+            @for (item of sections; track item.key) { <option [value]="item.key">{{ item.label }}</option> }
+          </select>
+        </label>
+        <label>Tipo de iniciativa <span class="required">*</span>
+          <select name="type" [(ngModel)]="draft.type" required>
+            <option>Proyecto de Ley Ordinaria</option><option>Proyecto de Ley Estatutaria</option><option>Acto Legislativo</option><option>Proyecto de Ley Orgánica</option>
+          </select>
+        </label>
+        <label>Número de expediente o gaceta
+          <input name="number" [(ngModel)]="draft.number" placeholder="Ej.: PL 342/2026 Cámara">
+        </label>
+        <label>Fecha de radicación <span class="required">*</span>
+          <input name="date" type="date" [(ngModel)]="draft.date" required>
+        </label>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="summary-heading">
+      <div class="section-title"><span>02</span><h2 id="summary-heading">Síntesis de la iniciativa</h2></div>
+      <div class="form-grid">
+        <label class="full">¿Qué ley se crea, modifica o reforma? <span class="required">*</span>
+          <input name="title" [(ngModel)]="draft.title" maxlength="180" required placeholder="Título claro de la iniciativa">
+        </label>
+        <label class="full">¿Quién la propuso? <span class="required">*</span>
+          <textarea name="author" [(ngModel)]="draft.author" rows="2" required placeholder="Autores, ponentes o entidad proponente"></textarea>
+        </label>
+        <label class="full">Detalles del cambio normativo <span class="required">*</span>
+          <textarea name="details" [(ngModel)]="draft.details" rows="5" required placeholder="Resume qué cambia y cómo afecta a la ciudadanía, en lenguaje claro."></textarea>
+        </label>
+        <label class="full">Fecha y estado actual del trámite <span class="required">*</span>
+          <input name="status" [(ngModel)]="draft.status" required placeholder="Ej.: Radicado, pendiente de primer debate">
+        </label>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="sources-heading">
+      <div class="section-title"><span>03</span><h2 id="sources-heading">Fuente y transparencia</h2></div>
+      <div class="form-grid">
+        <label class="full">Enlace a fuente oficial <span class="required">*</span>
+          <input name="source" type="url" [(ngModel)]="draft.source" required placeholder="https://...">
+          <small>Gaceta, Congreso, ministerio u otra entidad pública verificable.</small>
+        </label>
+        <label class="full">Cita de referencia
+          <textarea name="citation" [(ngModel)]="draft.citation" rows="2" placeholder="Referencia institucional en formato APA"></textarea>
+        </label>
+        <label class="ethics full"><input name="ethics" type="checkbox" ngModel required><span>Declaro que la síntesis mantiene neutralidad y está sustentada en la fuente oficial indicada.</span></label>
+      </div>
+    </section>
+
+    @if (feedback()) { <p class="feedback" role="alert">{{ feedback() }}</p> }
+    <div class="form-actions"><a [routerLink]="cancelRoute()">Cancelar</a><button type="submit">Publicar en el módulo seleccionado <span aria-hidden="true">↗</span></button></div>
+  </form>
+</main>

@@ -1,0 +1,42 @@
+<section class="module-intro">
+  <div class="module-inner">
+    <p class="eyebrow">{{ module().eyebrow }}</p>
+    <h1>{{ module().title }}</h1>
+    <p class="module-description">{{ module().description }}</p>
+    <div class="authority"><span class="status-dot"></span><span>Entidades de referencia</span><strong>{{ module().authority }}</strong></div>
+  </div>
+</section>
+
+<main class="module-content">
+  @if (module().key !== 'elecciones') {
+    <a class="create-link" [routerLink]="['/nueva-iniciativa']" [queryParams]="{ section: module().key }">＋ Radicar una iniciativa en este módulo</a>
+  }
+  <div class="content-heading">
+    <div><p class="eyebrow">Registro documental</p><h2>Leyes e iniciativas</h2></div>
+    <span>{{ laws().length }} documentos</span>
+  </div>
+
+  <div class="law-list">
+    @for (law of laws(); track law.id) {
+      <article class="law-item">
+        <div class="law-header">
+          <div><span class="law-type">{{ law.type }}</span><span class="law-number">{{ law.number }}</span></div>
+          <span class="law-date">{{ law.dateDisplay || law.date }}</span>
+        </div>
+        <h3>{{ law.title }}</h3>
+        <p class="law-details">{{ law.details }}</p>
+        <dl class="law-fields">
+          <div><dt>Proponente</dt><dd>{{ law.author }}</dd></div>
+          <div><dt>Estado</dt><dd>{{ law.status }}@if (law.stage) { · {{ law.stage }} }</dd></div>
+          @if (law.commission) { <div><dt>Comisión</dt><dd>{{ law.commission }}</dd></div> }
+        </dl>
+        <div class="law-bottom">
+          <p class="citation">{{ law.citation }}</p>
+          <a class="source-link" [href]="law.source" target="_blank" rel="noopener noreferrer">Consultar fuente oficial ↗</a>
+        </div>
+      </article>
+    } @empty {
+      <p class="empty-state">Todavía no hay documentos en este módulo.</p>
+    }
+  </div>
+</main>

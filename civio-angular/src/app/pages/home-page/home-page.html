@@ -1,0 +1,55 @@
+<main class="home-page">
+<section class="home-intro">
+  <div>
+    <p class="eyebrow">Observatorio legislativo ciudadano</p>
+    <h1>Las leyes, con contexto y fuentes.</h1>
+    <p class="lede">Sigue las iniciativas, entiende qué cambia y consulta la documentación oficial detrás de cada decisión.</p>
+    <a class="text-link" routerLink="/congreso">Explorar el Congreso <span aria-hidden="true">↗</span></a>
+  </div>
+  <aside class="session-note">
+    <span class="status-dot"></span>
+    <span>Periodo constitucional 2022-2026</span>
+    <strong>Información legislativa abierta</strong>
+  </aside>
+</section>
+</main>
+
+<section class="module-band" aria-labelledby="modules-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Consulta por tema</p>
+      <h2 id="modules-title">Módulos legislativos</h2>
+    </div>
+    <span class="section-note">{{ laws().length }} registros documentales</span>
+  </div>
+  <div class="module-grid">
+    @for (section of sections; track section.key) {
+      <a class="module-item" [routerLink]="['/', section.key]">
+        <span class="module-count">{{ section.count }}</span>
+        <span class="module-copy"><strong>{{ section.title }}</strong><small>{{ section.description }}</small></span>
+        <span class="module-arrow" aria-hidden="true">↗</span>
+      </a>
+    }
+  </div>
+</section>
+
+<section class="featured-section" id="iniciativas" aria-labelledby="featured-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Seguimiento activo</p>
+      <h2 id="featured-title">Iniciativas destacadas</h2>
+    </div>
+    <a class="text-link" routerLink="/congreso">Directorio del Congreso <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <div class="law-grid">
+    @for (law of featured(); track law.id) {
+      <article class="law-card">
+        <div class="card-meta"><span class="section-tag" [attr.data-section]="law.section">{{ law.section }}</span><span>{{ law.type }}</span></div>
+        <h3>{{ law.title }}</h3>
+        <p>{{ law.details }}</p>
+        <div class="card-bottom"><span class="status-label">{{ law.status }}</span><a [href]="law.source" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a></div>
+      </article>
+    }
+  </div>
+</section>
