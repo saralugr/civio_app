@@ -7,7 +7,7 @@ export class CongressService {
   readonly members = signal<CongressMember[]>([]);
 
   constructor(http: HttpClient) {
-    http.get<CongressMember[]>('/data/congresistas.json').subscribe({
+    http.get<CongressMember[]>('data/congresistas.json').subscribe({
       next: members => this.members.set(members),
       error: () => this.members.set([])
     });

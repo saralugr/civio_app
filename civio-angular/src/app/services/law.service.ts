@@ -8,7 +8,7 @@ export class LawService {
   readonly laws = signal<Law[]>([]);
 
   constructor(private readonly http: HttpClient) {
-    this.http.get<Law[]>('/data/leyes.json').subscribe({
+    this.http.get<Law[]>('data/leyes.json').subscribe({
       next: laws => this.laws.set(this.merge(laws, this.readSaved())),
       error: () => this.laws.set(this.readSaved())
     });

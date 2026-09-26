@@ -35,6 +35,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/civio_app/",
               "budgets": [
                 {
                   "type": "initial",
